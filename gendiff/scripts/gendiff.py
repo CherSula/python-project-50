@@ -26,6 +26,22 @@ def find_diff(file1_dict, file2_dict):
     return diff
 
 
+def convert_to_text(diff):
+    generated_diff_str = ''
+    sorted_items = sorted(diff.items(), key=lambda x: x[0])
+    for key, (value_1, value_2) in sorted_items:
+        if value_1 == value_2:
+            generated_diff_str += f'\t  {key}: {value_1}\n'
+        elif not value_1:
+            generated_diff_str += f'\t+ {key}: {value_2}\n'
+        elif not value_2:
+            generated_diff_str += f'\t- {key}: {value_1}\n'
+        elif value_1 != value_2:
+            generated_diff_str += f'\t- {key}: {value_1}\n'
+            generated_diff_str += f'\t+ {key}: {value_2}\n'
+    return f'{{\n{generated_diff_str}}}'
+
+
 def main():
     file1_dict = {
         "host": "hexlet.io",
@@ -40,7 +56,9 @@ def main():
         "host": "hexlet.io"
     }
 
-    print(find_diff(file1_dict, file2_dict))
+    diff = find_diff(file1_dict, file2_dict)
+    result = convert_to_text(diff)
+    print(result)
 
 
 if __name__ == '__main__':
