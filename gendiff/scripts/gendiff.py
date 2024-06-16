@@ -50,8 +50,9 @@ def get_dict_from(path_to_file):
 
 
 def main():
-    file1_dict = get_dict_from('gendiff/file1.json')
-    file2_dict = get_dict_from('gendiff/file2.json')
+    cmd_args = parser.parse_args()
+    file1_dict = get_dict_from(cmd_args.first_file)
+    file2_dict = get_dict_from(cmd_args.second_file)
     diff = find_diff(file1_dict, file2_dict)
     result = convert_to_text(diff)
     print(result)
