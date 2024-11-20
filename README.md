@@ -47,25 +47,19 @@ make package-install
 ## Запуск программы
  
 * без опции --format
-
+```
 **poetry** run **gendiff** [path to file]**file1.json** [path to file]**file2.json**
-
 **poetry** run **gendiff** [path to file]**file1.yml** [path to file]**file2.yml**
-
+```
 * для вывода в нужном формате:
-
+```
 poetry run gendiff --format stylish [path to file]**file1.yml** [path to file]**file2.yml**
-
 poetry run gendiff --format plain [path to file]**file1.yml** [path to file]**file2.yml**
-
 poetry run gendiff --format json [path to file]**file1.yml** [path to file]**file2.yml**
-
 poetry run gendiff --format stylish [path to file]**file1.json** [path to file]**file2.json**
-
 poetry run gendiff --format plain [path to file]**file1.json** [path to file]**file2.json**
-
 poetry run gendiff --format json [path to file]**file1.json** [path to file]**file2.json**
-
+```
 
 ## Пример работы программы
 [![asciicast](https://asciinema.org/a/689968.svg)](https://asciinema.org/a/689968)
