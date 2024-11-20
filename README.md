@@ -5,6 +5,9 @@
 ### CodeClimate:
 [![Maintainability](https://api.codeclimate.com/v1/badges/22eaee8f1739869c2d9e/maintainability)](https://codeclimate.com/github/CherSula/python-project-50/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/22eaee8f1739869c2d9e/test_coverage)](https://codeclimate.com/github/CherSula/python-project-50/test_coverage)
+#### GitHub Workflows:
+[![Hexlet-check](.github/workflows/hexlet-check.yml)](https://github.com/CherSula/python-project-50/blob/62d57322b9d7bcaaa7546f1d83fdf3170c9d38a9/.github/workflows/hexlet-check.yml)
+[![Pylint](.github/workflows/pylint.yml)](https://github.com/CherSula/python-project-50/blob/62d57322b9d7bcaaa7546f1d83fdf3170c9d38a9/.github/workflows/pylint.yml)
 
 ## О проекте
 Программа создана в качестве проекта для прохождения обучения и получения практического опыта разработки на языке Python на курсе компании __Хекслет__.
@@ -63,7 +66,3 @@ poetry run gendiff --format json [path to file]**file1.json** [path to file]**fi
 
 ## Пример работы программы
 [![asciicast](https://asciinema.org/a/689968.svg)](https://asciinema.org/a/689968)
-
-#### GitHub Workflows:
-[![Hexlet-check](.github/workflows/hexlet-check.yml)](https://github.com/CherSula/python-project-50/blob/62d57322b9d7bcaaa7546f1d83fdf3170c9d38a9/.github/workflows/hexlet-check.yml)
-[![Pylint](.github/workflows/pylint.yml)](https://github.com/CherSula/python-project-50/blob/62d57322b9d7bcaaa7546f1d83fdf3170c9d38a9/.github/workflows/pylint.yml)
